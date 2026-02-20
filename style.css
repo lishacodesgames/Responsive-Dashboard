@@ -310,3 +310,39 @@ main .analysis {
       stroke-dasharray: 81;
    } 
 }
+
+main .fav-characters {
+   margin-top: 1.3rem;
+
+   .character-list {
+      background-color: var(--color-white);
+      padding: var(--card-padding);
+      border-radius: var(--card-border-radius);
+      margin-top: 1rem;
+      box-shadow: var(--box-shadow);
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      gap: 1.4rem;
+      cursor: pointer;
+      transition: all 0.3s ease;
+
+      &:hover {
+         box-shadow: none;
+      }
+
+      .character {
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+         justify-content: center;
+
+         img {
+            width: 6rem;
+            height: 6rem;
+            margin-bottom: 0.4rem;
+            border-radius: 50%;
+         }
+      }
+   }
+}
