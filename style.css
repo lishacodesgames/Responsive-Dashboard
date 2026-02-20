@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Capriola&display=swap');
+
+:root {
+  --color-primary: #4F6F52;
+  --color-danger: #A35C5C;
+  --color-success: #7FA67A;
+  --color-warning: #C2A878;
+  --color-white: #FFFFFF;
+  --color-info-dark: #3E4F41;
+  --color-dark: #2E3A2F;
+  --color-light: rgba(79, 111, 82, 0.15);
+  --color-dark-variant: #556B57;
+  --color-background: #F4F1EA;
+
+  --card-border-radius: 2rem;
+  --border-radius-1: 0.4rem;
+  --border-radius-2: 1.2rem;
+
+  --card-padding: 1.8rem;
+  --padding-1: 1.2rem;
+
+  --box-shadow: 0 2rem 3rem var(--color-light);
+}
