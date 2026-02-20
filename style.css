@@ -227,3 +227,86 @@ aside .sidebar {
       border-radius: var(--border-radius-1);
    }
 }
+
+main {
+   margin-top: 1.4rem;
+}
+
+main .analysis {
+   display: grid;
+   grid-template-columns: repeat(3, 1fr);
+   gap: 1.6rem;
+
+   & > div {
+      background-color: var(--color-white);
+      padding: var(--card-padding);
+      border-radius: var(--card-border-radius);
+      margin-top: 1rem;
+      box-shadow: var(--box-shadow);
+      cursor: pointer;
+      transition: all 0.3s ease;
+
+      &:hover {
+         box-shadow: none;
+      }
+
+      .status {
+         display: flex;
+         align-items: center;
+         justify-content: space-between;
+      }
+   }
+
+   h3 {
+      margin-left: 0.2rem;
+      font-size: 0.9rem;
+   }
+
+   .progress {
+      position: relative;
+      width: 92px;
+      height: 92px;
+      border-radius: 50%;
+
+      .percentage {
+         position: absolute;
+         top: -3px;
+         left: -1px;
+         display: flex;
+         align-items: center;
+         justify-content: center;
+         height: 100%;
+         width: 100%;
+      }
+   }
+
+   svg {
+      width: 7rem;
+      height: 7rem;
+
+      circle {
+         fill: none;
+         stroke-width: 10;
+         stroke-linecap: round;
+         transform: translate(5px, 5px);
+      }
+   }
+
+   .reads svg circle {
+      stroke: var(--color-success);
+      stroke-dashoffset: +71;
+      stroke-dasharray: 200;
+   }
+
+   .visits svg circle {
+      stroke: var(--color-danger);
+      stroke-dashoffset: +10;
+      stroke-dasharray: 100;
+   }
+
+   .tbr svg circle {
+      stroke: var(--color-primary);
+      stroke-dashoffset: -80;
+      stroke-dasharray: 81;
+   } 
+}
