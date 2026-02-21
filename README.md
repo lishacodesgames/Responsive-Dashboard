@@ -3,8 +3,9 @@
 💻 **Website:** <a href="https://responsivedashboard-booknymph.netlify.app/">BookNymph Dashboard</a>
 <br>
 
-🚦&emsp;**Version:** v0.0.1 <br>
-🚦&emsp;**State:** In Development
+![Latest Tag](https://img.shields.io/github/v/tag/lishacodesgames/Responsive-Dashboard?color=%237DBA84)
+![Static Badge](https://img.shields.io/badge/Status-In_Development-yellow)
+
 ## Overview
 This is a simple non-function dashboard UI design, that is responsive for media layouts and interaction.
 ### Tech Stack
