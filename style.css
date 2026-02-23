@@ -59,7 +59,6 @@ body {
    font-family: 'Capriola', sans-serif;
    font-size: 0.88rem;
    user-select: none;
-   overflow-x: hidden;
    color: var(--color-dark);
    background-color: var(--color-background);
 }
@@ -344,5 +343,44 @@ main .fav-characters {
             border-radius: 50%;
          }
       }
+   }
+}
+
+main .recent-reads {
+   margin-top: 1.3rem;
+
+   h2 {
+      margin-bottom: 0.8rem;
+   }
+
+   table {
+      background-color: var(--color-white);
+      width: 100%;
+      padding: var(--card-padding);
+      text-align: center;
+      box-shadow: var(--box-shadow);
+      border-radius: var(--card-border-radius);
+      transition: all 0.3s ease;
+
+      &:hover {
+         box-shadow: none;
+      }
+
+      tbody td {
+         height: 2.8rem;
+         border-bottom: 1px solid var(--color-light);
+         color: var(--color-dark-variant);
+      }
+
+      tbody tr:last-child td {
+         border: none;
+      }
+   }
+
+   a {
+      text-align: center;
+      display: block;
+      margin: 1rem auto;
+      color: var(--color-primary);
    }
 }
